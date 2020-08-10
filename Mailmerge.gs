@@ -267,7 +267,7 @@ function insertData2(documentId, obj, obj_c, obj_i, obj_a, obj_t, cellrange) {
   
   targetDoc.saveAndClose();
   var pdf = DriveApp.getFileById(newdocumentId).getAs("application/pdf");
-  var folder = DriveApp.getFolderById('1j11Zvcwi8shA8W0ZyMyyr6mAVRA8cIUD');
+  var folder = DriveApp.getFolderById('idfolder');
   var id = folder.createFile(pdf).getUrl();
   cellrange.setValue(id);
 }
